@@ -67,8 +67,8 @@ public class HeatTransferSimulation {
             double r = rValues[i];
             double t = tValues[i - 1];
 
-            // Змініть на ваше диференціальне рівняння теплопровідності тут
-            double dTdr = -t / r;  // Приклад: dT/dr = -t/r, вам потрібно використовувати ваше рівняння
+            
+            double dTdr = -t / r; 
 
             // Метод Ейлера
             t += h * dTdr;
